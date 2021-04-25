@@ -1,0 +1,31 @@
+#Inventor V2.1 ascii
+
+Separator {
+    Translation {
+	translation	0 0 10
+    }
+    Rotation {
+	rotation	1 0 0  1.5708
+    }
+    Sphere {
+	radius	10
+    }
+    Translation {
+	translation	0 40 0
+    }
+    Cylinder {
+	radius	2
+	height	80
+    }
+    Translation {
+	translation	0 27 -12
+    }
+    BaseColor {
+	rgb	1 0 0
+    }
+    Cube {
+	width	2
+	height	15
+	depth	24
+    }
+}

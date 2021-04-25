@@ -1,0 +1,51 @@
+#Inventor V2.1 ascii
+
+
+# Vereinbarung ueber den Szenenaufbau eines einfaches Labyrinthes
+
+# Jedes Objekt ist mit einem Separator getrennt
+# Jedes Objekt besitzt einen Knoten: (Farbe,Textur),Translation, Rotation, Form des Objektes
+# Diese Reihenfolge ist Pflicht !!!
+
+# Reihenfolge der Objekte: Cubes,Cylinders,Cones !!!
+
+# Allgemeine Infos
+# Bei Cube-Rotationen immer POSITIV !!!
+# Fuer Cube: width ist X-Ausdehnung, height ist Y-Ausdehnung, depth ist Z-Ausdehnung (Hoehe)
+# Fuer Cone: height ist Z-Ausdehnung (Hoehe), Rotation ist immer 1 0 0  PI/2
+
+Separator {
+	Texture2 {
+	    filename	"wall.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Separator {
+		Translation {
+		    translation	300 200 50
+		}
+		Rotation {
+			rotation	0 0 0  1
+		    }
+		Cube {
+		    width	400
+		    height	10
+			depth 100
+		}
+	}
+	Separator {
+		Translation {
+		    translation	174.2462 272.1751 50
+		}
+		Rotation {
+			rotation	0 0 1  0.7854
+		    }
+		Cube {
+		    width	200
+		    height	10
+			depth 100
+		}
+	}	
+}

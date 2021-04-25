@@ -1,0 +1,445 @@
+#Inventor V2.1 ascii
+
+Separator {
+    Material {
+	ambientColor	0 0 0
+	diffuseColor	0.7 0.7 0.7
+    }
+    Separator {
+	Translation {
+	    translation	0 0 15
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 0.4 1
+	    }
+	   DEF ROBOT_DRAGGER Cube {
+		width	60
+		height	110
+		depth	8
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	0 0 -1  1.5708
+	    }
+	    Translation {
+		translation	-36 38 0
+	    }
+	    DEF +0 Group {
+		Separator {
+		    BaseColor {
+			rgb	0.5 0.2 0
+		    }
+		    Cylinder {
+			radius	15
+			height	10
+		    }
+		}
+		Translation {
+		    translation	0 -4 0
+		}
+		BaseColor {
+		    rgb	0.3 0.3 0.3
+		}
+		Cylinder {
+		    radius	3
+		    height	20
+		}
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	0 0 1  1.5708
+	    }
+	    Translation {
+		translation	36 38 0
+	    }
+	    USE +0
+	}
+	BaseColor {
+	    rgb	0.06 0.55 0.9
+	}
+	Separator {
+	    Translation {
+		translation	0 33 7
+	    }
+	    DEF ROBOT_DRAGGER Cube {
+		width	40
+		height	34
+		depth	6
+	    }
+	}
+	Separator {
+	    Translation {
+		translation	0 0 9
+	    }
+	    DEF ROBOT_DRAGGER Cube {
+		width	52
+		height	32
+		depth	10
+	    }
+	}
+	Separator {
+	    Translation {
+		translation	0 -33 13
+	    }
+	    DEF ROBOT_DRAGGER Cube {
+		width	55
+		height	34
+		depth	18
+	    }
+	    Group {
+		Translation {
+		    translation	0 -18 -2.5
+		}
+		Rotation {
+		    rotation	1 0 0  1.5708
+		}
+		BaseColor {
+		    rgb	0 0 0
+		}
+		Text3 {
+		    string	"B.A.R.T"
+		    justification	CENTER
+		    parts	ALL
+		}
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	0 0 -1  1.5708
+	    }
+	    Translation {
+		translation	32 38 7
+	    }
+	    DEF +1 Group {
+		Separator {
+		    BaseColor {
+			rgb	0.5 0.2 0
+		    }
+		    Cylinder {
+			radius	22
+			height	10
+		    }
+		}
+		Translation {
+		    translation	0 -4 0
+		}
+		BaseColor {
+		    rgb	0.3 0.3 0.3
+		}
+		Cylinder {
+		    radius	5
+		    height	20
+		}
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	0 0 1  1.5708
+	    }
+	    Translation {
+		translation	-36 38 7
+	    }
+	    USE +1
+	}
+	Separator {
+	    Rotation {
+		rotation	1 0 0  1.5708
+	    }
+	    DEF Fuss_Trans Translation {
+		translation	0 -6 0
+	    }
+	    Cylinder {
+		radius	25
+		height	4
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	1 0 0  1.5708
+	    }
+	    DEF Fussbein_Trans Translation {
+		translation	0 -4 0
+	    }
+	    DEF Fussbein Cylinder {
+		radius	5
+		height	4
+	    }
+	}
+    }
+    Group {
+	Translation {
+	    translation	0 0 32
+	}
+	Rotation {
+	    rotation	0 0 1 1.5708
+	}
+	DEF Gelenk_Theta1 Rotation {
+	    rotation	0 0 1  0
+	}
+    }
+    BaseColor {
+	rgb	0.6 0.6 0.6
+    }
+    Separator {
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	BaseColor {
+	    rgb	0.3 0.3 0.3
+	}
+	Cylinder {
+	    radius	10
+	    height	4
+	}
+    }
+    Group {
+	Translation {
+	    translation	0 0 6
+	}
+    }
+    Separator {
+	Translation {
+	    translation	0 -6 0
+	}
+	Cube {
+	    width	14
+	    height	2
+	    depth	8
+	}
+	Translation {
+	    translation	0 12 0
+	}
+	Cube {
+	    width	14
+	    height	2
+	    depth	8
+	}
+    }
+    Group {
+	Rotation {
+	    rotation	-1 0 0  1.5708
+	}
+	Rotation {
+	    rotation	0 0 -1  1.5708
+	}
+	DEF Gelenk_Theta2 Rotation {
+	    rotation	0 0 1  0
+	}
+    }
+    Separator {
+	Separator {
+	    Rotation {
+		rotation	-1 0 0  1.5708
+	    }
+	    BaseColor {
+		rgb	0.2 0.2 0.2
+	    }
+	    Cylinder {
+		radius	3.5
+		height	10
+	    }
+	}
+	Separator {
+	    Translation {
+		translation	21 0 3
+	    }
+	    Cube {
+		width	42
+		height	6
+		depth	2
+	    }
+	    Translation {
+		translation	0 0 -6
+	    }
+	    Cube {
+		width	42
+		height	6
+		depth	2
+	    }
+	}
+	Separator {
+	    Rotation {
+		rotation	-1 0 0  1.5708
+	    }
+	    Translation {
+		translation	18 0 0
+	    }
+	    Separator {
+		BaseColor {
+		    rgb	0.2 0.2 0.2
+		}
+		Cylinder {
+		    radius	3.5
+		    height	10
+		}
+	    }
+	    DEF Arm1_Rot Rotation {
+		rotation	0 -1 0  0.5
+	    }
+	    Translation {
+		translation	0 0 -12
+	    }
+	    Cube {
+		width	6
+		height	3
+		depth	24
+	    }
+	    DEF Arm2_Trans Translation {
+		translation	0 0 -24.53
+	    }
+	    DEF Arm2_Length Cube {
+		width	4
+		height	2
+		depth	25
+	    }
+	}
+    }
+    Group {
+	Translation {
+	    translation	42 0 0
+	}
+	Rotation {
+	    rotation	0 0 1  1.5708
+	}
+	DEF Gelenk_Theta3 Rotation {
+	    rotation	0 0 1  0
+	}
+    }
+    Separator {
+	Rotation {
+	    rotation	0 0 1  1.5708
+	}
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Separator {
+	    BaseColor {
+		rgb	0.2 0.2 0.2
+	    }
+	    Cylinder {
+		radius	3.5
+		height	10
+	    }
+	}
+	Translation {
+	    translation	0 3 0
+	}
+	Cube {
+	    width	4
+	    height	2
+	    depth	88
+	}
+	Translation {
+	    translation	0 -6 0
+	}
+	Cube {
+	    width	4
+	    height	2
+	    depth	88
+	}
+	Translation {
+	    translation	0 3 -44
+	}
+	BaseColor {
+	    rgb	0.2 0.2 0.2
+	}
+	Cylinder {
+	    radius	3.5
+	    height	10
+	}
+    }
+    Group {
+	Translation {
+	    translation	44 0 0
+	}
+    }
+    Separator {
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Translation {
+	    translation	0 3 0
+	}
+	BaseColor {
+	    rgb	0.2 0.2 0.2
+	}
+	Cylinder {
+	    radius	3.5
+	    height	3
+	}
+	Translation {
+	    translation	0 -6 0
+	}
+	Cylinder {
+	    radius	3.5
+	    height	3
+	}
+    }
+    Group {
+	Rotation {
+	    rotation	0 0 1  1.5708
+	}
+	DEF Gelenk_Theta4 Rotation {
+	    rotation	0 0 1  1.5708
+	}
+    }
+    Separator {
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Cylinder {
+	    radius	3.5
+	    height	2
+	}
+	Separator {
+	    BaseColor {
+		rgb	0.5 0.5 0.5
+	    }
+	    Cylinder {
+		radius	2
+		height	10
+	    }
+	}
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Translation {
+	    translation	0 10 0
+	}
+	Cylinder {
+	    radius	1
+	    height	20
+	}
+    }
+    Group {
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Translation {
+	    translation	0 0 20
+	}
+	DEF Gelenk_Theta5 Rotation {
+	    rotation	0 0 1  0
+	}
+    }
+    Separator {
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	BaseColor {
+	    rgb	0.3 0.3 0.3
+	}
+	Cylinder {
+		height 1
+	    radius	3
+	}
+    }
+	Translation {
+		translation 0 0 0.5
+	}
+   DEF TOOL_SYSTEM Separator {
+	}
+}

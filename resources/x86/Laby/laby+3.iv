@@ -1,0 +1,209 @@
+#Inventor V2.1 ascii
+
+
+# Vereinbarung ueber den Szenenaufbau eines einfaches Labyrinthes
+
+# Jedes Objekt ist mit einem Separator getrennt
+# Jedes Objekt besitzt einen Knoten: (Farbe,Textur),Translation, Rotation, Form des Objektes
+# Diese Reihenfolge ist Pflicht !!!
+
+# Reihenfolge der Objekte: Cubes,Cylinders,Cones !!!
+
+# Allgemeine Infos
+# Bei Cube-Rotationen immer POSITIV !!!
+# Fuer Cube: width ist X-Ausdehnung, height ist Y-Ausdehnung, depth ist Z-Ausdehnung (Hoehe)
+# Fuer Cone: height ist Z-Ausdehnung (Hoehe), Rotation ist immer 1 0 0  PI/2
+
+Separator {
+    Separator {
+	Translation {
+	    translation	0 495 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	1000
+	    height	10
+	    depth	100
+	}
+    }
+    Separator {
+	Translation {
+	    translation	-495 0 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	1000
+	    depth	100
+	}
+    }
+    Separator {
+	Translation {
+	    translation	0 -495 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	1000
+	    height	10
+	    depth	100
+	}
+    }
+    Separator {
+	Translation {
+	    translation	495 0 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	1000
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	0 100 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	300
+	    height	10
+	    depth	100
+	}
+    }
+    Separator {
+		Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	145 120 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	50
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	-145 30 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	150
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	100 -250 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	150
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	195 -180 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	200
+	    height	10
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"brick.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	300 -175 50
+	}
+	Rotation {
+	    rotation	0 0 1  0
+	}
+	Cube {
+	    width	10
+	    height	100
+	    depth	100
+	}
+    }
+    Separator {
+	Texture2 {
+	    filename	"river.rgb"
+	    wrapS	REPEAT
+	    wrapT	REPEAT
+	    model	DECAL
+	    blendColor	1 1 1
+	}
+	Translation {
+	    translation	-230 -275 50
+	}
+	Rotation {
+	    rotation	1 0 0  1.5708
+	}
+	Cylinder {
+	    radius	30
+	    height	100
+	}
+    }
+}

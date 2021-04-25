@@ -1,0 +1,586 @@
+#Inventor V2.1 ascii
+
+Separator {
+
+# Konstruktion des LOAD-Screens 
+	Separator {
+		Group {
+			BaseColor {
+				rgb	1 1 1
+			}
+			Texture2 {
+	    			filename	"metal_a.rgb"
+	   		 	wrapS	CLAMP
+	  		  	wrapT	CLAMP
+	   		 	model	MODULATE
+	   		 	blendColor	1 1 1
+			}	
+    		}
+		Cube {
+			width 80
+			height	52
+			depth	0.5
+	   	}
+    	}
+
+# Tasten des LOAD-Screens
+
+# Ziffer-1-Taste
+	Separator {
+		DEF NUMBER1_KEY_TRANS	Translation {
+				translation	-28 16 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER1_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER1_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER1_KEY Text3 {
+				string	"1"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-2-Taste
+	Separator {
+		DEF NUMBER2_KEY_TRANS	Translation {
+				translation	-14 16 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER2_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER2_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER2_KEY Text3 {
+				string	"2"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-3-Taste
+	Separator {
+		DEF NUMBER3_KEY_TRANS	Translation {
+				translation	0 16 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER3_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER3_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER3_KEY Text3 {
+				string	"3"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-4-Taste
+	Separator {
+		DEF NUMBER4_KEY_TRANS	Translation {
+				translation	14 16 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER4_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER4_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER4_KEY Text3 {
+				string	"4"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-5-Taste
+	Separator {
+		DEF NUMBER5_KEY_TRANS	Translation {
+				translation	28 16 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER5_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER5_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER1_KEY Text3 {
+				string	"5"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-6-Taste
+	Separator {
+		DEF NUMBER6_KEY_TRANS	Translation {
+				translation	-28 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER6_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER6_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER6_KEY Text3 {
+				string	"6"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-7-Taste
+	Separator {
+		DEF NUMBER7_KEY_TRANS	Translation {
+				translation	-14 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER7_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER7_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER7_KEY Text3 {
+				string	"7"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-8-Taste
+	Separator {
+		DEF NUMBER8_KEY_TRANS	Translation {
+				translation	0 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER8_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER8_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER8_KEY Text3 {
+				string	"8"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-9-Taste
+	Separator {
+		DEF NUMBER9_KEY_TRANS	Translation {
+				translation	14 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER9_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER9_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER9_KEY Text3 {
+				string	"9"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# Ziffer-0-Taste
+	Separator {
+		DEF NUMBER0_KEY_TRANS	Translation {
+				translation	28 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF NUMBER0_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF NUMBER0_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF NUMBER0_KEY Text3 {
+				string	"0"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# PLUS-Taste
+	Separator {
+		DEF PLUS_KEY_TRANS	Translation {
+				translation	0 -14 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF PLUS_KEY Cube {
+				width 6
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF PLUS_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF PLUS_KEY Text3 {
+				string	"+"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# DELETE-Taste
+	Separator {
+		DEF DELETE_KEY_TRANS	Translation {
+				translation	-20 -14 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF DELETE_KEY Cube {
+				width 24
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF DELETE_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF DELETE_KEY Text3 {
+				string	"DELETE"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# ENTER-Taste
+	Separator {
+		DEF ENTER_KEY_TRANS	Translation {
+				translation	20 -14 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF ENTER_KEY Cube {
+				width 24
+				height	6
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF ENTER_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF ENTER_KEY Text3 {
+				string	"ENTER"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+}

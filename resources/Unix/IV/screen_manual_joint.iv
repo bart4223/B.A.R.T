@@ -1,0 +1,285 @@
+#Inventor V2.1 ascii
+
+Separator {
+
+# Konstruktion des MANUAL-JOINT-Screens 
+	Separator {
+		Group {
+			BaseColor {
+				rgb	1 1 1
+			}
+			Texture2 {
+	    			filename	"metal_a.rgb"
+	   		 	wrapS	CLAMP
+	  		  	wrapT	CLAMP
+	   		 	model	MODULATE
+	   		 	blendColor	1 1 1
+			}	
+    		}
+		Cube {
+			width 80
+			height	52
+			depth	0.5
+	   	}
+    	}
+
+# Tasten des MANUAL-JOINT-Screens
+
+# JOINT1-Taste
+	Separator {
+		DEF JOINT1_KEY_TRANS	Translation {
+				translation	-22 9 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF JOINT1_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF JOINT1_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT1_KEY Text3 {
+				string	"JOINT 1"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# JOINT2-Taste
+	Separator {
+		DEF JOINT2_KEY_TRANS	Translation {
+				translation	22 9 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF JOINT2_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF JOINT2_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT2_KEY Text3 {
+				string	"JOINT 2"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# JOINT3-Taste
+	Separator {
+		DEF JOINT3_KEY_TRANS	Translation {
+				translation	-22 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF JOINT3_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF JOINT3_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT3_KEY Text3 {
+				string	"JOINT 3"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# JOINT4-Taste
+	Separator {
+		DEF JOINT4_KEY_TRANS	Translation {
+				translation	22 0 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF JOINT4_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF JOINT4_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT4_KEY Text3 {
+				string	"JOINT 4"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# JOINT5-Taste
+	Separator {
+		DEF JOINT5_KEY_TRANS	Translation {
+				translation	-22 -9 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF JOINT5_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF JOINT5_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT5_KEY Text3 {
+				string	"JOINT 5"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# START-POS-Taste
+	Separator {
+		DEF STARTPOS_KEY_TRANS	Translation {
+				translation	22 -9 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF STARTPOS_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF STARTPOS_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF STARTPOS_KEY Text3 {
+				string	"START POS"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+}

@@ -1,0 +1,113 @@
+#Inventor V2.1 ascii
+
+Separator {
+
+# Konstruktion des MANUAL-Screens 
+	Separator {
+		Group {
+			BaseColor {
+				rgb	1 1 1
+			}
+			Texture2 {
+	    			filename	"metal_a.rgb"
+	   		 	wrapS	CLAMP
+	  		  	wrapT	CLAMP
+	   		 	model	MODULATE
+	   		 	blendColor	1 1 1
+			}	
+    		}
+		Cube {
+			width 80
+			height	52
+			depth	0.5
+	   	}
+    	}
+
+# Tasten des MANUAL-Screens
+
+# ROBOT-Taste
+	Separator {
+		DEF ROBOT_KEY_TRANS Translation {
+				translation	0 4 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF ROBOT_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF ROBOT_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1.5 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF ROBOT_KEY Text3 {
+				string	"ROBOT"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# JOINT-Taste
+	Separator {
+		DEF JOINT_KEY_TRANS Translation {
+				translation	0 -4 1.25
+	   		 }
+		Separator {
+			Texture2 {
+	   		 filename	"oak.rgb"
+	   		 wrapS	CLAMP
+	   		 wrapT	CLAMP
+	    			model	MODULATE
+	    			blendColor	1 1 1
+			}
+	 		BaseColor {
+	    			rgb	1 1 1
+			}
+			DEF JOINT_KEY Cube {
+				width 25
+				height	4
+				depth	2
+	    		}
+		}
+		Group {
+			DEF JOINT_KEYTYPE_COLOR BaseColor {
+	   		 rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1.5 2
+	  		  }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF JOINT_KEY Text3 {
+				string	"JOINT"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+}

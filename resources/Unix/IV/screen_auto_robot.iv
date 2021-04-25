@@ -1,0 +1,287 @@
+#Inventor V2.1 ascii
+
+Separator {
+
+# Konstruktion des AUTO-ROBOT-Screens 
+	Separator {
+		Group {
+			BaseColor {
+				rgb	1 1 1
+			}
+			Texture2 {
+	    			filename	"metal_a.rgb"
+	   		 	wrapS	CLAMP
+	  		  	wrapT	CLAMP
+	   		 	model	MODULATE
+	   		 	blendColor	1 1 1
+			}	
+    		}
+		Cube {
+			width 80
+			height	52
+			depth	0.5
+	   	}
+    	}
+
+# Tasten des AUTO-ROBOT-Screens
+
+# WAY-OUT-Ueberschrift
+
+Separator {
+	Translation {
+			translation	0 12 1.25
+	    	}
+	 	BaseColor {
+	   		 rgb	0 0 0
+		}
+		Font {
+			name "Courier New:BOLD"
+			#name	"Bank Gothic Medium BT"
+			size	6
+		}
+		DEF IKP_KEY Text3 {
+			string	"WAY OUT"
+			spacing	0
+			justification	CENTER
+			parts		ALL
+		}
+	}
+
+# SIMPLE-Taste
+	Separator {
+		DEF SIMPLE_KEY_TRANS	Translation {
+				translation	-24 8 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF SIMPLE_KEY Cube {
+				width 22
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF SIMPLE_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF SIMPLE_KEY Text3 {
+				string	"SIMPLE"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# MODULO-Taste
+	Separator {
+		DEF MODULO_KEY_TRANS	Translation {
+				translation	0 8 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF MODULO_KEY Cube {
+				width 22
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF MODULO_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF MODULO_KEY Text3 {
+				string	"MODULO"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# PLEDGE-Taste
+	Separator {
+		DEF PLEDGE_KEY_TRANS	Translation {
+				translation	24 8 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF PLEDGE_KEY Cube {
+				width 22
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF PLEDGE_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF PLEDGE_KEY Text3 {
+				string	"PLEDGE"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# TARGET-Ueberschrift
+
+Separator {
+	Translation {
+			translation	0 -4 1.25
+	    	}
+	 	BaseColor {
+	   		 rgb	0 0 0
+		}
+		Font {
+			name "Courier New:BOLD"
+			#name	"Bank Gothic Medium BT"
+			size	6
+		}
+		DEF IKP_KEY Text3 {
+			string	"TARGET"
+			spacing	0
+			justification	CENTER
+			parts		ALL
+		}
+	}
+
+
+# BUG-Taste
+	Separator {
+		DEF BUG_KEY_TRANS	Translation {
+				translation	-24 -8 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF BUG_KEY Cube {
+				width 22
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF BUG_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF BUG_KEY Text3 {
+				string	"BUG"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+
+# CORNER-Taste
+	Separator {
+		DEF CORNER_KEY_TRANS	Translation {
+				translation	24 -8 1.25
+	    		}
+		Separator {
+	 		BaseColor {
+	   			 rgb	1 1 1
+			}
+			Texture2 {
+	  		  filename	"oak.rgb"
+				wrapS	CLAMP
+	   			wrapT	CLAMP
+	    			model	MODULATE
+	  		 	 blendColor	1 1 1
+			}
+			DEF CORNER_KEY Cube {
+				width 22
+				height	4
+				depth	2
+	   		 }
+		}
+		Group {
+			DEF CORNER_KEYTYPE_COLOR BaseColor {
+	   			rgb	1 1 1
+			}
+			Translation {
+				translation	0 -1 2
+	   		 }
+			Font {
+				name "Courier New:BOLD"
+				#name	"Bank Gothic Medium BT"
+				size	4
+			}
+			DEF CORNER_KEY Text3 {
+				string	"CORNER"
+				spacing	0
+				justification	CENTER
+				parts		ALL
+			}
+		}
+	}
+}

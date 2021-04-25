@@ -1,0 +1,507 @@
+#Inventor V2.1 ascii
+
+Separator {
+
+# Clippingebenen 
+
+	Group {
+	Translation {
+		translation	0 40 0
+	 }
+	ClipPlane {
+		plane	0 -1 0  0
+		on	TRUE
+		}
+	Translation {
+		translation	0 -40 0
+	 }
+	Translation {
+		translation	0 -40 0
+	 }
+	ClipPlane {
+		plane	0 1 0  0
+		on	TRUE
+		}
+	Translation {
+		translation	0 40 0
+	 }
+	}
+
+# Konstruktion des Terminals 
+Separator {
+	Group {
+	BaseColor {
+	    rgb	1 1 1
+	}
+	Texture2 {
+	    filename	"oak.rgb"
+	    wrapS	CLAMP
+	    wrapT	CLAMP
+	    model	MODULATE
+	    blendColor	1 1 1
+	}
+	}
+	Separator {
+	   Translation {
+		translation	0 33 0
+	    }
+	    Rotation {
+		rotation	0 0 1  -1.5708
+	    }
+	    Cylinder {
+		radius	7
+		height	170
+	    }
+	}
+	Separator {
+	    Translation {
+		translation	-81 0 0
+	    }
+	    Rotation {
+		rotation	0 0 1  0
+	    }
+	    DEF +0 Cylinder {
+		radius	2
+		height	66
+	    }
+	    Translation {
+		translation	102 0 0
+	    }
+	    USE +0
+		Translation {
+			translation 60 0 0
+		}
+		USE +0
+	}
+	Separator {
+	    Translation {
+		translation	0 -33 0
+	    }
+	    Rotation {
+		rotation	0 0 1  -1.5708
+	    }
+	    Cylinder {
+		radius	7
+		height	170
+	    }
+	}
+	Separator {
+		Group {
+		BaseColor {
+	 	   rgb	1 1 1
+		}
+		Texture2 {
+		    filename	"metal_a.rgb"
+	 	   wrapS	CLAMP
+	  	  wrapT	CLAMP
+	  	  model	MODULATE
+	  	  blendColor	1 1 1
+		}
+		}
+	Translation {
+		translation 51 0 0
+	}
+	Cube {
+		width 52
+		height	52
+		depth	0.5
+		}
+	} 
+}
+
+# Ausgabescreen-Beschriftung des Terminals
+Separator {
+		Translation {
+			translation 51 30 8
+		}
+		BaseColor {
+	   	 rgb	1 1 1
+		}
+		Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	10
+	}
+	Text3 {
+		string	"NEWS"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+
+# Tasten des Haupt-Terminals
+
+Translation {
+		translation	-30 0 0
+	 }
+
+# MANUAL-Taste
+    Separator {
+	Texture2 {
+	    filename	"moonrock.rgb"
+	    wrapS	CLAMP
+	    wrapT	CLAMP
+	    model	MODULATE
+	    blendColor	1 1 1
+	}
+	Separator {
+	Group {
+	 DEF MANUAL_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	DEF MANUAL_KEY_TRANS Translation {
+		translation	-33 33 7
+	    }
+	DEF MANUAL_KEY Cube {
+		width 30
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF MANUAL_KEY Text3 {
+		string	"MANUAL"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# AUTO-Taste
+	Separator {
+	Group {
+	    DEF AUTO_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF AUTO_KEY_TRANS Translation {
+		translation	0 33 7
+	    }
+	    DEF AUTO_KEY Cube {
+		width 30
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF AUTO_KEY Text3 {
+		string	"AUTO"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# LOAD-Taste
+
+	Separator {
+	Group {
+	    DEF LOAD_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF LOAD_KEY_TRANS Translation {
+		translation	33 33 7
+	    }
+	    DEF LOAD_KEY Cube {
+		width 30
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF LOAD_KEY Text3 {
+		string	"LOAD"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# BACK-Taste
+	Separator {
+	Group {
+	    DEF BACK_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF BACK_KEY_TRANS Translation {
+		translation	-39 -33 7
+	    }
+	    DEF BACK_KEY Cube {
+		width 20
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF BACK_KEY Text3 {
+		string	"BACK"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# VIEW-Taste
+	Separator {
+	Group {
+	    DEF VIEW_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF VIEW_KEY_TRANS Translation {
+		translation	-13 -33 7
+	    }
+	    DEF VIEW_KEY Cube {
+		width 20
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF VIEW_KEY Text3 {
+		string	"VIEW"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# STOP-Taste
+	Separator {
+	Group {
+	    DEF STOP_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF STOP_KEY_TRANS Translation {
+		translation	13 -33 7
+	    }
+	    DEF STOP_KEY Cube {
+		width 20
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF STOP_KEY Text3 {
+		string	"STOP"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+
+# EXIT-Taste
+	Separator {
+	Group {
+	    DEF EXIT_KEY_COLOR BaseColor {
+	    rgb	1 1 1
+		}
+	    DEF EXIT_KEY_TRANS Translation {
+		translation	39 -33 7
+	    }
+	    DEF EXIT_KEY Cube {
+		width 20
+		height	6
+		depth	4
+	    }
+	}
+	Group {
+	BaseColor {
+	    rgb	0 0 0
+	}
+	 Translation {
+		translation	0 -1.5 2.5
+	    }
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	6
+	}
+	DEF EXIT_KEY Text3 {
+		string	"EXIT"
+		spacing	0
+		justification	CENTER
+		parts		ALL	}
+	}
+	}
+    }
+
+# Manual-Screen=Auto-Screen
+Separator {
+	DEF MANUAL_SCREEN_TRANS	Translation {
+		translation	0 59 -4
+	    }
+	DEF MANUAL_SCREEN_SEP Separator {
+		}
+	}
+
+# Load-Screen
+Separator {
+	DEF LOAD_SCREEN_TRANS	Translation {
+		translation	0 -59 -4
+	    }
+	DEF LOAD_SCREEN_SEP Separator {
+		}
+	}
+
+# Manual-Joint-Screen
+Separator {
+	DEF MANUAL_JOINT_SCREEN_TRANS	Translation {
+		translation	0 -59 -4
+	    }
+	DEF MANUAL_JOINT_SCREEN_SEP Separator {
+		}
+	}
+
+# Auto-Joint-Screen
+Separator {
+	DEF AUTO_JOINT_SCREEN_TRANS	Translation {
+		translation	0 -59 -4
+	    }
+	DEF AUTO_JOINT_SCREEN_SEP Separator {
+		}
+	}
+
+# Auto-Robot-Screen
+Separator {
+	DEF AUTO_ROBOT_SCREEN_TRANS	Translation {
+		translation	0 -59 -4
+	    }
+	DEF AUTO_ROBOT_SCREEN_SEP Separator {
+		}
+	}
+
+# Ausgabescreen
+Separator {
+	Translation {
+		translation 81 0 2
+	    }
+
+# Aktion-Zeile	
+Separator {
+	Translation {
+		translation 0 0 2
+	    }
+	BaseColor {
+	    rgb	0 0 0
+	}
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	4
+	}
+	DEF AKTION_LINE Text3 {
+		string	""
+		spacing	1
+		justification	CENTER
+		parts		ALL	}
+
+	}
+	
+# Info-Zeile
+Separator {
+	Translation {
+		translation 0 -14 2
+	    }
+	BaseColor {
+	    rgb	0 0 1
+	}
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	4
+	}
+	DEF INFO_LINE Text3 {
+		string	""
+		spacing	1
+		justification	CENTER
+		parts		ALL	}
+
+	}
+
+# ALARM-Zeile
+Separator {
+	Translation {
+		translation 0 14 2
+	    }
+	BaseColor {
+	    rgb	1 0 0
+	}
+	Font {
+		name "Courier New:BOLD"
+		#name	"Bank Gothic Medium BT"
+		size	4
+	}
+	DEF ALARM_LINE Text3 {
+		string	""
+		spacing	1
+		justification	CENTER
+		parts		ALL	}
+
+	}
+}	
+}
